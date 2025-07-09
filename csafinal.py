@@ -86,7 +86,7 @@ st.write("Enter your data to predict your risk of diabetes")
 col1, col2 = st.columns(2)
 
 with col1:
-    Pregnancies = st.number_input("Pregnancies", min_value=0, max_value=17, value=0)
+    Pregnancies = st.number_input("Pregnancies(if man set to 0)", min_value=0, max_value=17, value=0)
     Glucose = st.number_input("Glucose", min_value=0, max_value=200, value=0)
     BloodPressure = st.number_input("BloodPressure", min_value=0, max_value=122, value=0)
     SkinThickness = st.number_input("SkinThickness", min_value=0, max_value=99, value=0)
