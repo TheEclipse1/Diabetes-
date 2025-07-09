@@ -48,6 +48,7 @@ print(f'The accuracy of the Random Forest Classifier is {rfc_a}')
 print(f'The f1 score of the Random Forest Classifier is {rfc_f1}')
 #displaying the actual and predicted values
 y_pred = rfc.predict(X_test_scaled_features)
+st.title("The Predicition models accuracy")
 result_df = pd.DataFrame({'Actual': y_test, 'Predicted': y_pred})
 #plotting the actual and predicted values
 fig, ax = plt.subplots()
